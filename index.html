@@ -457,7 +457,7 @@
 
         <div class="subscription-container">
           <h3 class="subscription-title title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
-          <form class="subscription-form js-speaker-form">
+          <form class="subscription-form">
             <label class="subscription-label" for="subscription-email"></label>
             <input
               class="subscription-input input"
@@ -485,92 +485,92 @@
             <use href="./images/svg/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <div class="form">
+
+        <form class="form js-speaker-form" autocomplete="on">
           <h2 class="modal-title title">
             Оставьте свои данные, мы вам перезвоним
           </h2>
-          <form class="js-speaker-form" autocomplete="on">
-            <!-- группа для ввода инфо -->
-            <div class="form-fild">
-              <label for="user-name" class="form-label label">Имя</label>
-              <div class="form-auxiliary">
-                <input
-                  type="text"
-                  class="form-input input"
-                  name="user-name"
-                  id="user-name"
-                  required
-                />
-                <svg class="form-icon icon">
-                  <use href="./images/svg/sprite.svg#icon-personBlack"></use>
-                </svg>
-              </div>
-            </div>
 
-            <div class="form-fild">
-              <label for="user-tel" class="form-label label">Телефон </label>
-              <div class="form-auxiliary">
-                <input
-                  type="tel"
-                  class="form-input input"
-                  name="user-tel"
-                  id="user-tel"
-                />
-                <svg class="form-icon icon">
-                  <use href="./images/svg/sprite.svg#icon-phoneBlack"></use>
-                </svg>
-              </div>
-            </div>
-
-            <div class="form-fild">
-              <label for="user-email" class="form-label label">Почта</label>
-              <div class="form-auxiliary">
-                <input
-                  type="email"
-                  class="form-input input"
-                  name="user-email"
-                  id="user-email"
-                />
-                <svg class="form-icon icon">
-                  <use href="./images/svg/sprite.svg#icon-emailBlack"></use>
-                </svg>
-              </div>
-            </div>
-
-            <div class="form-fild form-textarea">
-              <label for="textarea" class="form-label label">Комментарий</label>
-              <textarea
-                name="comment"
-                class="input input-textarea"
-                id="textarea"
-                placeholder="Введите текст"
-              ></textarea>
-            </div>
-
-            <!-- чекбокс -->
-
-            <label class="checkbox-label label"
-              ><input
-                type="checkbox"
-                name="conditions"
-                class="checkbox-input visually-hidden"
-                value="conditions"
+          <!-- группа для ввода инфо -->
+          <div class="form-fild">
+            <label for="user-name" class="form-label label">Имя</label>
+            <div class="form-auxiliary">
+              <input
+                type="text"
+                class="form-input input"
+                name="user-name"
+                id="user-name"
                 required
               />
-              <svg class="checkbox-icon icon">
-                <use href="./images/svg/sprite.svg#icon-iconCheck"></use>
+              <svg class="form-icon icon">
+                <use href="./images/svg/sprite.svg#icon-personBlack"></use>
               </svg>
-              Соглашаюсь с рассылкой и принимаю
-              <a class="checkbox-link" href="#">Условия договора</a>
-            </label>
+            </div>
+          </div>
 
-            <!-- кнопка отправки модалки -->
+          <div class="form-fild">
+            <label for="user-tel" class="form-label label">Телефон </label>
+            <div class="form-auxiliary">
+              <input
+                type="tel"
+                class="form-input input"
+                name="user-tel"
+                id="user-tel"
+              />
+              <svg class="form-icon icon">
+                <use href="./images/svg/sprite.svg#icon-phoneBlack"></use>
+              </svg>
+            </div>
+          </div>
 
-            <button type="submit" class="button button-form primary">
-              Отправить
-            </button>
-          </form>
-        </div>
+          <div class="form-fild">
+            <label for="user-email" class="form-label label">Почта</label>
+            <div class="form-auxiliary">
+              <input
+                type="email"
+                class="form-input input"
+                name="user-email"
+                id="user-email"
+              />
+              <svg class="form-icon icon">
+                <use href="./images/svg/sprite.svg#icon-emailBlack"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-fild form-textarea">
+            <label for="textarea" class="form-label label">Комментарий</label>
+            <textarea
+              name="comment"
+              class="input input-textarea"
+              id="textarea"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+
+          <!-- чекбокс -->
+
+          <label class="checkbox-label label"
+            ><input
+              type="checkbox"
+              name="conditions"
+              class="checkbox-input visually-hidden"
+              value="conditions"
+              required
+            />
+            <svg class="checkbox-icon icon">
+              <use href="./images/svg/sprite.svg#icon-iconCheck"></use>
+            </svg>
+            Соглашаюсь с рассылкой и принимаю
+            <a class="checkbox-link" href="#">Условия договора</a>
+          </label>
+
+          <!-- кнопка отправки модалки -->
+
+          <button type="submit" class="button button-form primary">
+            Отправить
+          </button>
+        </form>
       </div>
     </div>
     <!-- проверка отправки модалки -->
